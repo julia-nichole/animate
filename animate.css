@@ -1,0 +1,22 @@
+body{
+    background: #333;
+}
+.box{
+    background:white;
+    width: 200px;
+    height:200px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s ;
+    animation-iteration-count: 2;
+    animation-delay: 3s;
+    animation-direction: alternate;
+
+}
+ @keyframes myanimation{
+     0%{background-color:white; left:0px; top:0px;border-radius:20% 0% 0% 0%;}
+     25%{background-color:red;left: 200px;top:400px;border-radius:20% 30% 40% 20%;}
+     50%{background-color:green; left:150px;top:600px;border-radius:30% 40% 50% 60%;}
+     75%{background-color:blueviolet;left:400px;top:800px;border-radius:40% 40% 40% 40%;}
+     100%{background-color:blue;left:200px;top:100px;border-radius: 50% 50% 50% 50%}
+ }
